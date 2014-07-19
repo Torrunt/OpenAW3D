@@ -9,19 +9,16 @@ Created by Corey Zeke Womack (Torrunt) - [me@torrunt.net](me@torrunt.net)
 
 Advance Wars © Nintendo and Intelligent Systems.
 
-Idea based on the (Advance Wars: VG Remix done by klamp)[http://www.polycount.com/forum/showthread.php?t=123579] on the Polycount Forums.
+Idea based on the [Advance Wars: VG Remix done by klamp](http://www.polycount.com/forum/showthread.php?t=123579) on the Polycount Forums.
 
 3D Models made by Corey, using klamp's work as a reference.
 Textures from klamp.
 
-Icons from
-http://advance-wars-net.com/
-http://spritedatabase.net/ (Ripped by [Grim](http://sdb.neuropod.net))
+Icons from [advance-wars-net.com](http://advance-wars-net.com/) and [spritedatabase.net](http://spritedatabase.net/)
 
-Music from
-http://advance-wars-net.com/ (Ripped from Advance Wars: Dual Strike)
+Music from [advance-wars-net.com](http://advance-wars-net.com/) (ripped from Advance Wars: Dual Strike)
 
-[The Font “Advance Wars 2 GBA” by Patrick Lauke](http://fontstruct.com/fontstructions/show/718457)
+Advances Wars 2 GBA font by [Patrick Lauke](http://fontstruct.com/fontstructions/show/718457)
 
 
 [Outlined/Silhouetted Diffuse Shader by AnomalousUnderdog](http://wiki.unity3d.com/index.php/Silhouette-Outlined_Diffuse)
