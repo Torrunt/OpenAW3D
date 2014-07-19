@@ -1,0 +1,14 @@
+fileFormatVersion: 2
+guid: 5174cd3b7cbbb0d4ab1315dbf8999838
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - Font: {fileID: 12800000, guid: a211fbeb7b22c3f4584cef2433daa255, type: 3}
+  - Icon_Wait: {instanceID: 0}
+  - Icon_End: {instanceID: 0}
+  - Icon_Options: {instanceID: 0}
+  - Icon_Fire: {instanceID: 0}
+  - Icon_Capture: {instanceID: 0}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
