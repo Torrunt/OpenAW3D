@@ -2,7 +2,7 @@
 
 An open source 3D Advance Wars game made with [Unity](http://unity3d.com/).
 
-![](http://i.imgur.com/LBRnZVb.png)
+![](http://i.imgur.com/eQ1EeKL.png)
 
 ### Credits
 Created by Corey Zeke Womack (Torrunt) - [me@torrunt.net](me@torrunt.net)
