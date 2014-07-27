@@ -1,0 +1,13 @@
+fileFormatVersion: 2
+guid: 788cdcd4f9de9ea44886839227d9c292
+MonoImporter:
+  serializedVersion: 2
+  defaultReferences:
+  - MaterialNormal: {instanceID: 0}
+  - MaterialRed: {instanceID: 0}
+  - MaterialBlue: {instanceID: 0}
+  - ShaderNormal: {fileID: 7, guid: 0000000000000000f000000000000000, type: 0}
+  - ShaderAlpha: {fileID: 4800000, guid: a59f5a84c99f16b48a33e5bb3208675e, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
