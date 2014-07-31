@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 693c3cb9a0a830840a9451dfc5f82eac
+guid: ff25c3b17aa46f74d8ad2586d75cec3e
 ModelImporter:
   serializedVersion: 16
   fileIDToRecycleName:
@@ -10,7 +10,7 @@ ModelImporter:
     4300000: Box010
     9500000: //RootNode
   materials:
-    importMaterials: 0
+    importMaterials: 1
     materialName: 0
     materialSearch: 1
   animations:
