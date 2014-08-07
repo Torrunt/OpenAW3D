@@ -188,24 +188,8 @@ public class Unit : MonoBehaviour
 				Game.Teams[Team - 1].Units.Add(this);
 		}
 
-		UpdateColor();
-	}
-	private void UpdateColor()
-	{
-		Color color;
-
-		switch (Team)
-		{
-		case 1: color = Color.red; break;
-		case 2: color = Color.blue; break;
-		default: color = Color.white; break;
-		}
-		color *= ColorMultiplier;
-
-		for (int i = 0; i < transform.childCount; i++)
-			transform.GetChild(i).renderer.material.SetColor("_Color", color);
-		if (renderer != null)
-			renderer.material.SetColor("_Color", color);
+		// Set Colour
+		GetComponentInChildren<TeamColour>().SetTeam(Team, colorMultiplier: ColorMultiplier);
 	}
 	
 	// Health
@@ -372,7 +356,7 @@ public class Unit : MonoBehaviour
 		Game.Selector.UnselectCurrentUnit();
 
 		ColorMultiplier = 0.35f;
-		UpdateColor();
+		GetComponentInChildren<TeamColour>().SetTeam(Team, colorMultiplier: ColorMultiplier);
 	}
 	public void Reset()
 	{
@@ -381,7 +365,7 @@ public class Unit : MonoBehaviour
 		WaitingForMoveAccept = false;
 
 		ColorMultiplier = 1;
-		UpdateColor();
+		GetComponentInChildren<TeamColour>().SetTeam(Team, colorMultiplier: ColorMultiplier);
 	}
 	public bool IsWaitingForMoveAccept() { return WaitingForMoveAccept; }
 	public bool HasMoved() { return Moved; }

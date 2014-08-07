@@ -11,32 +11,20 @@ public class TeamColour : MonoBehaviour
 	public Shader ShaderNormal;
 	public Shader ShaderAlpha;
 
-	public void SetTeam(int team, Color colorOffset = default(Color))
+	public void SetTeam(int team, Color colorOffset = default(Color), float colorMultiplier = 1)
 	{
-		if (MaterialNormal == null || MaterialRed == null || MaterialBlue == null)
+		if ((team == 1 && MaterialRed == null) || (team == 1 && MaterialBlue == null) || (team != 1 && team != 2 && MaterialNormal == null))
 		{
 			// Tint
+			Color color;
 			switch (team)
 			{
-				case 1:
-				{
-					if (renderer != null)
-						renderer.material.SetColor("_Color", Color.red - colorOffset);
-					break;
-				}
-				case 2:
-				{
-					if (renderer != null)
-						renderer.material.SetColor("_Color", Color.blue - colorOffset);
-					break;
-				}
-				default:
-				{
-					if (renderer != null)
-						renderer.material.SetColor("_Color", Color.white - colorOffset);
-					break;
-				}
+				case 1: color = Color.red; break;
+				case 2: color = Color.blue; break;
+				default: color = Color.white; break;
 			}
+			if (renderer != null)
+				renderer.material.SetColor("_Color", (color - colorOffset) * colorMultiplier);
 		}
 		else
 		{
@@ -47,7 +35,7 @@ public class TeamColour : MonoBehaviour
 				case 2: renderer.material = MaterialBlue; break;
 				default: renderer.material = MaterialNormal; break;
 			}
-			renderer.material.SetColor("_Color", Color.white - colorOffset);
+			renderer.material.SetColor("_Color", (Color.white - colorOffset) * colorMultiplier);
 
 			if (colorOffset.a > 0)
 				renderer.material.shader = ShaderAlpha;
