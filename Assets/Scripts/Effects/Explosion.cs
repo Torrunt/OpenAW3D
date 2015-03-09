@@ -21,7 +21,7 @@ public class Explosion : MonoBehaviour
 	{
 		if (Alpha <= 0)
 		{
-			if (!audio.isPlaying)
+			if (!GetComponent<AudioSource>().isPlaying)
 				GameObject.Destroy(this.gameObject);
 			return;
 		}
@@ -30,11 +30,11 @@ public class Explosion : MonoBehaviour
 		Alpha -= FadeSpeed * Time.deltaTime;
 
 		transform.localScale = new Vector3(Scale, Scale, Scale);
-		renderer.material.color = new Color(renderer.material.color.r, renderer.material.color.g, renderer.material.color.b, Alpha);
-		renderer.material.SetColor("_OutlineColor", new Color(
-		                           renderer.material.GetColor("_OutlineColor").r,
-		                           renderer.material.GetColor("_OutlineColor").g,
-		                           renderer.material.GetColor("_OutlineColor").b,
+		GetComponent<Renderer>().material.color = new Color(GetComponent<Renderer>().material.color.r, GetComponent<Renderer>().material.color.g, GetComponent<Renderer>().material.color.b, Alpha);
+		GetComponent<Renderer>().material.SetColor("_OutlineColor", new Color(
+		                           GetComponent<Renderer>().material.GetColor("_OutlineColor").r,
+		                           GetComponent<Renderer>().material.GetColor("_OutlineColor").g,
+		                           GetComponent<Renderer>().material.GetColor("_OutlineColor").b,
 		                           Alpha));
 	}
 }

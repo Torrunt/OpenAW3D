@@ -80,7 +80,7 @@ public class Building : MonoBehaviour
 		AlphaOffset = new Color(0, 0, 0, 0.2f);
 		SetTeam();
 
-		gameObject.collider.enabled = false;
+		gameObject.GetComponent<Collider>().enabled = false;
 	}
 	public void OnUnitLeave()
 	{
@@ -91,7 +91,7 @@ public class Building : MonoBehaviour
 		AlphaOffset = new Color(0, 0, 0, 0);
 		SetTeam();
 
-		gameObject.collider.enabled = true;
+		gameObject.GetComponent<Collider>().enabled = true;
 	}
 
 	public void Capture(int hitPoints, int team)

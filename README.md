@@ -2,17 +2,16 @@
 
 An open source 3D Advance Wars game made with [Unity](http://unity3d.com/).
 
-![](http://i.imgur.com/3SMK1FO.png)
+![](http://i.imgur.com/xqMIZAY.png)
 
 ### Credits
-Created by Corey Zeke Womack (Torrunt) - [me@torrunt.net](me@torrunt.net)
+Created by Corey Zeke Womack (Torrunt) - [me@torrunt.net](mailto:me@torrunt.net) - [torrunt.net](http://torrunt.net)
 
-Advance Wars © Nintendo and Intelligent Systems.
+Advance Wars © Nintendo and Intelligent Systems
 
-Idea based on the [Advance Wars: VG Remix done by klamp](http://www.polycount.com/forum/showthread.php?t=123579) on the Polycount Forums.
+Idea based on the [Advance Wars: VG Remix done by klamp](http://klampinprogress.blogspot.com.au/2013/08/the-hulking-twist-offsets-desire.html) on the [Polycount Forums](http://www.polycount.com/forum/showthread.php?t=123579)
 
-3D Models made by Corey, using klamp's work as a reference.
-Textures from klamp.
+3D Models made by Corey, using klamp's work as a reference (Textures from klamp)
 
 Icons from [advance-wars-net.com](http://advance-wars-net.com/) and [spritedatabase.net](http://spritedatabase.net/)
 

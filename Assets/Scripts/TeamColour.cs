@@ -23,24 +23,24 @@ public class TeamColour : MonoBehaviour
 				case 2: color = Color.blue; break;
 				default: color = Color.white; break;
 			}
-			if (renderer != null)
-				renderer.material.SetColor("_Color", (color - colorOffset) * colorMultiplier);
+			if (GetComponent<Renderer>() != null)
+				GetComponent<Renderer>().material.SetColor("_Color", (color - colorOffset) * colorMultiplier);
 		}
 		else
 		{
 			// Change Material
 			switch (team)
 			{
-				case 1: renderer.material = MaterialRed; break;
-				case 2: renderer.material = MaterialBlue; break;
-				default: renderer.material = MaterialNormal; break;
+				case 1: GetComponent<Renderer>().material = MaterialRed; break;
+				case 2: GetComponent<Renderer>().material = MaterialBlue; break;
+				default: GetComponent<Renderer>().material = MaterialNormal; break;
 			}
-			renderer.material.SetColor("_Color", (Color.white - colorOffset) * colorMultiplier);
+			GetComponent<Renderer>().material.SetColor("_Color", (Color.white - colorOffset) * colorMultiplier);
 
 			if (colorOffset.a > 0)
-				renderer.material.shader = ShaderAlpha;
+				GetComponent<Renderer>().material.shader = ShaderAlpha;
 			else
-				renderer.material.shader = ShaderNormal;
+				GetComponent<Renderer>().material.shader = ShaderNormal;
 		}
 	}
 }

@@ -254,7 +254,7 @@ public class Unit : MonoBehaviour
 
 		// Sound Effect
 		if (Sound_Fire != null)
-			audio.PlayOneShot(Sound_Fire);
+			GetComponent<AudioSource>().PlayOneShot(Sound_Fire);
 
 		// Damage Enemy
 		CurrentAttackTarget.Damage(GetHitPoints() * 0.5f);

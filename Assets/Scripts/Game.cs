@@ -29,7 +29,7 @@ public class Game : MonoBehaviour
 		Selector = GameObject.Find("Selector").GetComponent<UnitSelector>();
 		Level = GameObject.Find("Level").GetComponent<Level>();
 		HUD = GameObject.Find("GUI").GetComponent<HeadsUpDisplay>();
-		Camera = GameObject.Find("Main Camera").camera;
+		Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
 
 		Units = GameObject.Find("Units").transform;
 		Buildings = GameObject.Find("Buildings").transform;

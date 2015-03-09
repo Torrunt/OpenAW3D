@@ -45,7 +45,7 @@ public class Menu : MonoBehaviour
 			Camera = Game.Camera;
 		}
 		else
-		Camera = GameObject.Find("Main Camera").camera;
+		Camera = GameObject.Find("Main Camera").GetComponent<Camera>();
 
 		useGUILayout = false;
 
